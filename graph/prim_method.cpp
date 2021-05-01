@@ -11,7 +11,7 @@ public:
     }
     
     ve<ve<pair<int,T>>> mst;
-    ll dis_sum = 0;
+    T dis_sum = 0;
     void solve(){
         mst.assign(N,{});
         dis_sum = 0;
