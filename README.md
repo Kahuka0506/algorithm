@@ -5,33 +5,25 @@
 
 
 
-## Algorithm
-- DFS
-- BFS
-- Binary-Search
-- DP
-
-
-
 ## Graph
-### 最短経路探索
+### 最短経路探索 
 - ベルマンフォード   `bellman_ford.cpp`
 - ダイクストラ   `dijkstra.cpp`
 - ワーシャルフロイド  `warshall_floyd.cpp`
 
-
-### 最小全域木 minimam-spanning-tree  
+### 最小全域木 minimam-spanning-tree (MST)
 - プリム法   `prim_method.cpp`
 - クラスカル法  
-
 
 ### 最小共通祖先 Lowest-Common-Ancestor (LCA) 
 - LCA   `lca.cpp`
 - ダブリング
 - オイラーツアー
 
-### 最大流・最小カット
+### 強連結成分分解  Strongly Connected Component (SCC)
+- SCC `scc.cpp`
 
+### 最大流・最小カット
 
 ### 二部グラフ
 
@@ -46,6 +38,8 @@
 `union_find_potential.cpp`
 `union_find_wight.cpp`
 
+### 座標圧縮
+
 ### Binary index tree
 `binary_index_tree.cpp`
 
@@ -53,6 +47,7 @@
 - Range Minimum Query  `segment_tree_RMQ.cpp`
 - Range Average Query  `segment_tree_RAQ.cpp`
 - 遅延評価セグメント木
+
 
 
 
@@ -65,15 +60,15 @@
 
 
 ### 組み合わせ
-`combination.cpp`
+- nCm計算 `combination.cpp`
 
 ### mod関係
-`mod.cpp`
+- mod-Library `mod.cpp`
 
 
 ### 素数
-`prime.cpp`  
-`prime_eratosthenes.cpp`
+- 素因数分解 `prime.cpp`  
+- エラストテネスの篩い `prime_eratosthenes.cpp`
 
 
 
@@ -84,9 +79,9 @@
 
 
 
+
 ## String
 - Rolling-Hash
-
 
 
 
