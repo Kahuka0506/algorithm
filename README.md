@@ -51,10 +51,10 @@
 
 
 ## String
-- Rolling-Hash
+- Rolling-Hash `rolling_hash.cpp`
 - Z-algorithm
 
 
 ## Other
-- Xor-Shirft
-
+- Xor-Shirft `xorshift.cpp`
+- 再帰下降構文解析 EBNF(Extended Backus–Naur Form) `EBNF.cpp`
