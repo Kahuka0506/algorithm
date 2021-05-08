@@ -11,6 +11,8 @@
 - ワーシャルフロイド  `warshall_floyd.cpp`  Shortest-Path
 - プリム法   `prim_method.cpp` minimam-spanning-tree (MST)
 - クラスカル法   minimam-spanning-tree (MST)
+- 木の直径
+- 木の高さ
 - LCA   `lca.cpp` Lowest-Common-Ancestor (LCA) 
 - オイラーツアー
 - 強連結成分分解 `scc.cpp` Strongly Connected Component (SCC)
@@ -23,12 +25,11 @@
 
 ## Data Structure
 - Union Find  `union_find.cpp`, `union_find_potential.cpp`, `union_find_wight.cpp`
-- 座標圧縮
-- Binary index tree `binary_index_tree.cpp`
+- 座標圧縮 `compress.cpp`
+- Binary index tree `binary_index_tree.cpp`   
 - セグメント木 Range Minimum Query  `segment_tree_RMQ.cpp`
 - セグメント木 Range Average Query  `segment_tree_RAQ.cpp`
 - 遅延評価セグメント木
-
 
 
 
@@ -58,3 +59,5 @@
 ## Other
 - Xor-Shirft `xorshift.cpp`
 - 再帰下降構文解析 EBNF(Extended Backus–Naur Form) `EBNF.cpp`
+- 二分探索木
+- 赤黒木
