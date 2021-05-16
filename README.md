@@ -11,7 +11,7 @@
 - ワーシャルフロイド  `warshall_floyd.cpp`  Shortest-Path
 - プリム法   `prim_method.cpp` minimam-spanning-tree (MST)
 - クラスカル法   minimam-spanning-tree (MST)
-- 木の直径
+- 木の直径 `diameter_of_tree.cpp`
 - 木の高さ
 - LCA   `lca.cpp` Lowest-Common-Ancestor (LCA) 
 - オイラーツアー
@@ -27,6 +27,7 @@
 - Union Find  `union_find.cpp`, `union_find_potential.cpp`, `union_find_wight.cpp`
 - 座標圧縮 `compress.cpp`
 - Binary index tree `binary_index_tree.cpp`   
+- セグメント木  `segment_tree.cpp`
 - セグメント木 Range Minimum Query  `segment_tree_RMQ.cpp`
 - セグメント木 Range Average Query  `segment_tree_RAQ.cpp`
 - 遅延評価セグメント木
@@ -42,7 +43,8 @@
 - mod-Library  `mod.cpp`
 - 素因数分解  `prime.cpp`  
 - エラストテネスの篩い `prime_eratosthenes.cpp`
-
+- Floor-Sum
+- 中国剰余定理 Chinese-Remainder-Theorem (CRT) `crt.cpp`  
 
 
 ## Game
