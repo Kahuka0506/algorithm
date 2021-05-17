@@ -38,8 +38,8 @@ public:
         if(r <= a || b <= l) return init_v;
         if(a <= l && r <= b) return node[k];
         
-        int vl = find(a,b,2*k+1,l,(l+r)/2);
-        int vr = find(a,b,2*k+2,(l+r)/2,r);
+        T vl = find(a,b,2*k+1,l,(l+r)/2);
+        T vr = find(a,b,2*k+2,(l+r)/2,r);
         
         return func(vl,vr);
     }
