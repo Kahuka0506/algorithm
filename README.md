@@ -29,8 +29,10 @@
 - Binary index tree `binary_index_tree.cpp`   
 - セグメント木  `segment_tree.cpp`
 - セグメント木 Range Minimum Query  `segment_tree_RMQ.cpp`
-- セグメント木 Range Average Query  `segment_tree_RAQ.cpp`
-- 遅延評価セグメント木
+- セグメント木 Range Sum Query  `segment_tree_RSQ.cpp`
+- 遅延評価セグメント木 Range Updata Query  `lazy_segment_tree_RUQ.cpp`
+- 遅延評価セグメント木 Range Add Query  `lazy_segment_tree_RAQ.cpp`
+
 
 
 

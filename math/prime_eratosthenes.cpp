@@ -40,6 +40,22 @@ public:
         return res;
     }
     
+    ll divisor_num(int n){
+        ll res = 1;
+        int a = 0;
+        ll b = 0;
+        while (n > 1) {
+            if(a != f[n]){
+                res *= (b+1);
+                b = 0;
+                a = f[n];
+            }
+            n /= f[n];
+            b++;
+        }
+        res *= (b+1);
+        return res;
+    }
 };
 
 
