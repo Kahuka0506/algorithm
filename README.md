@@ -16,6 +16,7 @@
 - LCA   `lca.cpp` Lowest-Common-Ancestor (LCA) 
 - オイラーツアー `euler_tour.cpp`
 - 強連結成分分解 `scc.cpp` Strongly Connected Component (SCC)
+- Heavy-Light Decomposition (HLD)
 - フォードファルカーソン `ford_fulkerson.cpp` Maximum flow problem
 - ディニック `dinic.cpp` Maximum flow problem
 - 二部グラフ
