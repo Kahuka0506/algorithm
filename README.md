@@ -17,8 +17,9 @@
 - オイラーツアー `euler_tour.cpp`
 - 強連結成分分解 `scc.cpp` Strongly Connected Component (SCC)
 - Heavy-Light Decomposition (HLD)
-- フォードファルカーソン `ford_fulkerson.cpp` Maximum flow problem
-- ディニック `dinic.cpp` Maximum flow problem
+- フォードファルカーソン `ford_fulkerson.cpp` Maximum Flow 
+- ディニック `dinic.cpp` Maximum Flow 
+- 最小費用流 `min_cost_flow.cpp` Minimax Fost Flow
 - 二部グラフ
 - 二部マッチング
 
