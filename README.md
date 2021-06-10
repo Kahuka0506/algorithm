@@ -14,9 +14,10 @@
 - 木の直径 `diameter_of_tree.cpp`
 - 木の高さ
 - LCA   `lca.cpp` Lowest-Common-Ancestor (LCA) 
-- オイラーツアー
+- オイラーツアー `euler_tour.cpp`
 - 強連結成分分解 `scc.cpp` Strongly Connected Component (SCC)
-- 最大流・最小カット
+- フォードファルカーソン `ford_fulkerson.cpp` Maximum flow problem
+- ディニック `dinic.cpp` Maximum flow problem
 - 二部グラフ
 - 二部マッチング
 
@@ -24,7 +25,9 @@
 
 
 ## Data Structure
-- Union Find  `union_find.cpp`, `union_find_potential.cpp`, `union_find_wight.cpp`
+- Union Find  `union_find.cpp`,
+- Union Find (重みつき) `union_find_wight.cpp`
+- Union Find (ポテンシャル) `union_find_potential.cpp`
 - 座標圧縮 `compress.cpp`
 - Binary index tree `binary_index_tree.cpp`   
 - セグメント木  `segment_tree.cpp`
