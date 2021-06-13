@@ -16,9 +16,9 @@
 - LCA   `lca.cpp` Lowest-Common-Ancestor (LCA) 
 - オイラーツアー `euler_tour.cpp`
 - 強連結成分分解 `scc.cpp` Strongly Connected Component (SCC)
-- Heavy-Light Decomposition (HLD)
+- Heavy-Light Decomposition (HLD) `HLD.cpp`
 - フォードファルカーソン `ford_fulkerson.cpp` Maximum Flow 
-- ディニック `dinic.cpp` Maximum Flow 
+- デニック `dinic.cpp` Maximum Flow 
 - 最小費用流 `min_cost_flow.cpp` Minimax Fost Flow
 - 二部グラフ
 - 二部マッチング
