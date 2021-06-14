@@ -13,13 +13,14 @@
 - クラスカル法   minimam-spanning-tree (MST)
 - 木の直径 `diameter_of_tree.cpp`
 - 木の高さ
-- LCA   `lca.cpp` Lowest-Common-Ancestor (LCA) 
+- 最小共通祖先   `lca.cpp` Lowest-Common-Ancestor (LCA) 
 - オイラーツアー `euler_tour.cpp`
 - 強連結成分分解 `scc.cpp` Strongly Connected Component (SCC)
-- Heavy-Light Decomposition (HLD) `HLD.cpp`
+- HL分解 `HLD.cpp` Heavy-Light Decomposition (HLD)   
 - フォードファルカーソン `ford_fulkerson.cpp` Maximum Flow 
-- デニック `dinic.cpp` Maximum Flow 
-- 最小費用流 `min_cost_flow.cpp` Minimax Fost Flow
+- ディニツ `dinic.cpp` Maximum Flow 
+- プリプロープッシュ法
+- 最小費用流(主双対法) `min_cost_flow.cpp` Minimax Fost Flow
 - 二部グラフ
 - 二部マッチング
 
