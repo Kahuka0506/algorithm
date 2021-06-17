@@ -20,7 +20,8 @@
 - フォードファルカーソン `ford_fulkerson.cpp` Maximum Flow 
 - ディニツ `dinic.cpp` Maximum Flow 
 - プリプロープッシュ法
-- 最小費用流(主双対法) `min_cost_flow.cpp` Minimax Fost Flow
+- 最小費用流(負閉路除去) `min_cost_flow_negative_cycle.cpp.cpp` Minimax Fost Flow
+- 最小費用流(主双対法) `min_cost_flow_primal_dual.cpp.cpp` Minimax Fost Flow
 - 二部グラフ
 - 二部マッチング
 
