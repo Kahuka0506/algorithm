@@ -44,7 +44,7 @@
 
 
 
-## Math
+## Number
 - 桁和 `digit_sum.cpp`  
 - 約数列挙  `enum_divisors.cpp`  
 - 最小共約数・最大公倍数  `gcd_lcm.cpp`  
@@ -57,6 +57,13 @@
 - 中国剰余定理 Chinese-Remainder-Theorem (CRT) `crt.cpp`  
 
 - mod計算
+
+
+## Math
+- ラグランジュ補完 `lagrange_interpolation.cpp` mod書き換え
+- 行列冪乗
+- Kitamasa法 `kitamasa_method.cpp`
+
 
 ## Game
 - Nim
@@ -71,7 +78,6 @@
 
 ## Other
 - Xor-Shirft `xorshift.cpp`
-- ラグランジュ補完 `lagrange_interpolation.cpp` mod書き換え
 - 再帰下降構文解析 EBNF(Extended Backus–Naur Form) `EBNF.cpp`
 - 二分探索木 Binary Search Tree `binary_search_tree.cpp`
 - 赤黒木
