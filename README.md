@@ -50,11 +50,12 @@
 - 拡張ユークリッド互助法 `extgcd.cpp`  
 - nCm計算 `combination.cpp`
 - mod-Library  `mod.cpp`
+- mod計算 `mint.cpp`
 - 素因数分解  `prime.cpp`  
 - エラストテネスの篩い `prime_eratosthenes.cpp`
 - Floor-Sum
 - 中国剰余定理 Chinese-Remainder-Theorem (CRT) `crt.cpp`  
-- mod計算
+
 
 
 ## Math
