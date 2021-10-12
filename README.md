@@ -40,7 +40,7 @@
 - セグメント木 Range Sum Query  `segment_tree_RSQ.cpp`
 - 遅延評価セグメント木 Range Updata Query  `lazy_segment_tree_RUQ.cpp`
 - 遅延評価セグメント木 Range Add Query  `lazy_segment_tree_RAQ.cpp`
-
+- トライ木 `trie.cpp`
 
 
 
