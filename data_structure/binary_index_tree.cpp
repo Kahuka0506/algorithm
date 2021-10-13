@@ -1,4 +1,30 @@
 
+
+class BinaryIndexTree {
+    int N;
+    vl bit;
+    
+public:
+    BinaryIndexTree(int n_):N(n_){
+        bit.assign(N+1,0LL);
+        //rep(x,N) bit[x] = x&-x; //v_x = 1
+        //for(int x = 1; x < N; ++x) bit[x+(x&-x)] += bit[x]; //bit[x] = v_x
+    }
+    
+    void add(int a, ll w){
+        for (int x = a; x <= N; x += x&-x) bit[x] += w;
+    }
+    
+    ll sum(int a){
+        ll ret = 0;
+        for (int x = a; x > 0; x -= x&-x) ret += bit[x];
+        return ret;
+    }
+    
+};
+
+
+
 template <typename T>
 class BIT {
     ve<T> node;
