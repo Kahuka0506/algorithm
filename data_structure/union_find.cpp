@@ -1,38 +1,30 @@
 
-
 class UnionFind {
     int N;
-    
 public:
     vi root;
-    UnionFind(int n){
-        N = n;
+    UnionFind(int N_):N(N_){
         root.assign(N,-1);
     }
     
-    int find(int n){
-        if(root[n] < 0) return n;
-        else return root[n] = find(root[n]);
+    int find(int a){
+        if(root[a] < 0) return a;
+        else return root[a] = find(root[a]);
     }
     
-    void connect(int a, int b){
-        int a_root = find(a);
-        int b_root = find(b);
-        
-        if(a_root == b_root) return;
-        
-        if(root[a_root] > root[b_root]){
-            root[b_root] += root[a_root];
-            root[a_root] = b_root;
+    void unite(int a, int b){
+        int root_a = find(a), root_b = find(b);
+        if(root_a == root_b) return;
+        if(-root[root_a] >= -root[root_b]){
+            root[root_a] += root[root_b];
+            root[root_b] = root_a;
         }else{
-            root[a_root] += root[b_root];
-            root[b_root] = a_root;
+            root[root_b] += root[root_a];
+            root[root_a] = root_b;
         }
     }
     
-    bool is_same(int a, int b){
-        if(find(a) == find(b)) return true;
-        else return false;
-    }
+    bool same(int a, int b){return find(a) == find(b);}
+    
 };
 
