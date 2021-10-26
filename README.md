@@ -28,7 +28,6 @@
 
 
 
-
 ## Data Structure
 - Union Find  `union_find.cpp`
 - 重みつきUnion Find `union_find.cpp`
@@ -40,7 +39,6 @@
 - 遅延評価セグメント木 Range Updata Query  `lazy_segment_tree_RUQ.cpp`
 - 遅延評価セグメント木 Range Add Query  `lazy_segment_tree_RAQ.cpp`
 - トライ木 `trie.cpp`
-
 
 
 ## Number
@@ -55,7 +53,6 @@
 - エラストテネスの篩い `prime_eratosthenes.cpp`
 - Floor-Sum
 - 中国剰余定理 Chinese-Remainder-Theorem (CRT) `crt.cpp`  
-
 
 
 
