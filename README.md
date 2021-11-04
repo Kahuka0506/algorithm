@@ -3,7 +3,7 @@
 [![Kahuka](https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2FKahuka)](https://atcoder.jp/users/Kahuka)
 [![Kahuka](https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fcodeforces%2Fjson%2FKahuka)](https://codeforces.com/profile/Kahuka)
 
-[![Kahuka](https://cp-logo.vercel.app/topcoder/kahuka)(https://www.topcoder.com/members/kahuka)]
+[![Kahuka](https://cp-logo.vercel.app/topcoder/kahuka)](https://www.topcoder.com/members/kahuka)
 
 ## Graph
 - ベルマンフォード   `bellman_ford.cpp`  Shortest-Path
