@@ -1,11 +1,11 @@
 
 
-class BinaryIndexTree {
+class FenwickTree {
     int N;
     vl bit;
     
 public:
-    BinaryIndexTree(int n_):N(n_){
+    FenwickTree(int n_):N(n_){
         bit.assign(N+1,0LL);
         //rep(x,N) bit[x] = x&-x; //v_x = 1
         //for(int x = 1; x < N; ++x) bit[x+(x&-x)] += bit[x]; //bit[x] = v_x
