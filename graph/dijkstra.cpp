@@ -1,5 +1,66 @@
 
+template <typename T>
+class Dijkstra {
+    int N;
+    ve<ve<pair<int,T>>> G;
+    
+public:
+    void add_edge(int u, int v, T w){G[u].pb({v,w});}
+    Dijkstra(int N_):N(N_){G.resize(N);}
+    ve<T> d;
+    vi from;
+    void solve(int s){
+        d.assign(N,-1);
+        from.assign(N,-1);
+        pq1<pair<T,pii>> pq;
+        pq.push({0,{s,-1}});
+        while (!pq.empty()) {
+            auto [c,uv] = pq.top();
+            auto [u,u0] = uv;
+            pq.pop();
+            if(d[u] != -1) continue;
+            d[u] = c, from[u] = u0;
+            for (auto [v,w] : G[u]) {
+                if(d[v] != -1) continue;
+                pq.push({w+d[u],{v,u}});
+            }
+        }
+    }
+};
 
+
+
+template <typename T>
+class Dijkstra {
+    int N;
+    ve<ve<pair<int,T>>> G;
+    
+public:
+    void add_edge(int u, int v, T w){G[u].pb({v,w});}
+    Dijkstra(int N_):N(N_){G.resize(N);}
+    ve<T> d;
+    void solve(int s){
+        d.assign(N,-1);
+        pq1<pair<T,int>> pq;
+        pq.push({0,s});
+        while (!pq.empty()) {
+            auto [c,u] = pq.top();
+            pq.pop();
+            if(d[u] != -1) continue;
+            d[u] = c;
+            for (auto [v,w] : G[u]) {
+                if(d[v] != -1) continue;
+                pq.push({w+d[u],v});
+            }
+        }
+    }
+};
+
+
+
+
+
+//old
 class Dijkstra {
     int N;
 public:
@@ -33,8 +94,5 @@ public:
     
     ll dir(int v){return d[v];}
 };
-
-
-
 
 
