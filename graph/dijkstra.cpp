@@ -8,25 +8,22 @@ public:
     void add_edge(int u, int v, T w){G[u].pb({v,w});}
     Dijkstra(int N_):N(N_){G.resize(N);}
     ve<T> d;
-    vi from;
     void solve(int s){
-        d.assign(N,-1);
-        from.assign(N,-1);
-        pq1<pair<T,pii>> pq;
-        pq.push({0,{s,-1}});
+        d.assign(N,infi);
+        pq1<pair<T,int>> pq;
+        pq.push({0,s});
+        d[s] = 0;
         while (!pq.empty()) {
-            auto [c,uv] = pq.top();
-            auto [u,u0] = uv;
+            auto [c,u] = pq.top();
             pq.pop();
-            if(d[u] != -1) continue;
-            d[u] = c, from[u] = u0;
+            if(d[u] < c) continue;
             for (auto [v,w] : G[u]) {
-                if(d[v] != -1) continue;
-                pq.push({w+d[u],{v,u}});
+                if(chmin(d[v],d[u]+w)) pq.push({d[v],v});
             }
         }
     }
 };
+
 
 
 
@@ -39,24 +36,25 @@ public:
     void add_edge(int u, int v, T w){G[u].pb({v,w});}
     Dijkstra(int N_):N(N_){G.resize(N);}
     ve<T> d;
+    vi from;
     void solve(int s){
-        d.assign(N,-1);
-        pq1<pair<T,int>> pq;
-        pq.push({0,s});
+        d.assign(N,infi);
+        from.assign(N,-1);
+        pq1<pair<T,pii>> pq;
+        pq.push({0,{s,-1}});
+        d[s] = 0;
         while (!pq.empty()) {
-            auto [c,u] = pq.top();
+            auto [c,uv] = pq.top();
+            auto [u,u0] = uv;
             pq.pop();
-            if(d[u] != -1) continue;
-            d[u] = c;
+            if(d[u] < c) continue;
+            d[u] = c, from[u] = u0;
             for (auto [v,w] : G[u]) {
-                if(d[v] != -1) continue;
-                pq.push({w+d[u],v});
+                if(chmin(d[v],d[u]+w)) pq.push({w+d[u],{v,u}});
             }
         }
     }
 };
-
-
 
 
 
