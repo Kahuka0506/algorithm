@@ -1,4 +1,38 @@
 
+
+class TopologicalSort {
+    int N;
+    vvi G;
+    vi deg,ord;
+public:
+    TopologicalSort(int N_):N(N_){
+        G.resize(N);
+        deg.assign(N,0);
+    }
+    void add_edge(int a, int b){
+        G[a].pb(b);
+        deg[b]++;
+    }
+    bool solve(){
+        queue<int> que;
+        rep(i,N) if(deg[i] == 0) {que.push(i);}
+        while (!que.empty()) {
+            int u = que.front();
+            que.pop();
+            ord.pb(u);
+            for(int v : G[u]){
+                deg[v]--;
+                if(deg[v] == 0) que.push(v);
+            }
+        }
+        
+        return (si(ord) == N);
+    }
+};
+
+
+
+
 class TopologicalSort {
     int n;
     vvi g;
