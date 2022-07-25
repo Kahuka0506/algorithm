@@ -1,5 +1,8 @@
 # Algorithm Library
 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Kahuka/library?style=flat-square)
+![Lines of code](https://img.shields.io/tokei/lines/github/Kahuka/library?style=flat-square)       
+
 [![Kahuka](https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2FKahuka)](https://atcoder.jp/users/Kahuka)
 [![Kahuka](https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fcodeforces%2Fjson%2FKahuka)](https://codeforces.com/profile/Kahuka)
 
@@ -45,7 +48,7 @@
 - 約数列挙  `enum_divisors.cpp`  
 - 最小共約数・最大公倍数  `gcd_lcm.cpp`  
 - 拡張ユークリッド互助法 `extgcd.cpp`  
-- nCm計算 `combination.cpp`
+- $_nC_m$計算 `combination.cpp`
 - mod-Library  `mod.cpp`
 - mod計算 `mint.cpp`
 - 素因数分解  `prime.cpp`  
@@ -69,10 +72,11 @@
 
 
 
-## String
+## [String](./string/README.md)
 - Rolling-Hash `rolling_hash.cpp`
-- Z-algorithm
-
+- [Z-algorithm](./string/z_algorithm.cpp) `z_algorithm.cpp`
+- KMP
+- Manacher
 
 
 ## Other
