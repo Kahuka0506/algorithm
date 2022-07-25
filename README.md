@@ -1,26 +1,32 @@
 # Algorithm Library
 
-Competitive Programming Library      
 [![Kahuka](https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2FKahuka)](https://atcoder.jp/users/Kahuka)
-[![Kahuka](https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fcodeforces%2Fjson%2FKahuka)](https://codeforces.com/profile/Kahuka)
-![GitHub code size ](https://img.shields.io/github/languages/code-size/Kahuka0506/algorithm)
-![Lines of code](https://img.shields.io/tokei/lines/github/Kahuka0506/algorithm)       
+[![Kahuka](https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fcodeforces%2Fjson%2FKahuka)](https://codeforces.com/profile/Kahuka) 
 
 
 ## [Graph](./graph/)
-- ベルマンフォード   `bellman_ford.cpp`  Shortest-Path
-- ダイクストラ   `dijkstra.cpp`  Shortest-Path
-- ワーシャルフロイド  `warshall_floyd.cpp`  Shortest-Path
-- プリム法   `prim_method.cpp` minimam-spanning-tree (MST)
-- クラスカル法   minimam-spanning-tree (MST)
-- 強連結成分分解 `scc.cpp` Strongly Connected Component (SCC) 
-- フォードファルカーソン `ford_fulkerson.cpp` Maximum Flow 
-- ディニツ `dinic.cpp` Maximum Flow 
-- プリプロープッシュ法
-- 最小費用流(負閉路除去) `min_cost_flow_negative_cycle.cpp.cpp` Minimax Fost Flow
-- 最小費用流(主双対法) `min_cost_flow_primal_dual.cpp.cpp` Minimax Fost Flow
-- 二部グラフ
-- 二部マッチング
+- Shortest Path
+    - Dijkstra  `dijkstra.cpp`, $O(E\text{log}(V))$
+    - Bellman-Ford] `bellman_ford.cpp`, $O(EV)$
+    - Warshall-Floyd  `warshall_floyd.cpp`, $O(V^3)$
+
+- Minimam Spanning Tree (MST)
+    - プリム法   `prim_method.cpp`  
+    - クラスカル法    
+
+- Strongly Connected Component (SCC)
+    - 強連結成分分解 `scc.cpp`
+
+- Flow
+    - フォードファルカーソン `ford_fulkerson.cpp` Maximum Flow 
+    - ディニツ `dinic.cpp` Maximum Flow 
+    - プリプロープッシュ法
+    - 最小費用流(負閉路除去) `min_cost_flow_negative_cycle.cpp.cpp` Minimax Fost Flow
+    - 最小費用流(主双対法) `min_cost_flow_primal_dual.cpp.cpp` Minimax Fost Flow
+
+- Matching
+    - 二部グラフ
+    - 二部マッチング
 
 
 ## [Tree](./tree/)
