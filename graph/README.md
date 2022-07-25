@@ -1,12 +1,12 @@
 # Graph
 
 ## Shortest Path
-- [Dijkstra](./dijkstra.cpp)   `dijkstra.cpp`      
-$O(E\text{log}(V))$
-- [Bellman-Ford](./bellman_ford.cpp)   `bellman_ford.cpp`      
-$O(EV)$
-- [Warshall-Floyd](./warshall_floyd.cpp)  `warshall_floyd.cpp`      
-$O(V^3)$
+### [Dijkstra](./dijkstra.cpp)   
+`dijkstra.cpp`, $O(E\text{log}(V))$
+### [Bellman-Ford](./bellman_ford.cpp)
+`bellman_ford.cpp`, $O(EV)$
+### [Warshall-Floyd](./warshall_floyd.cpp)  
+`warshall_floyd.cpp`, $O(V^3)$
 
 
 ## minimam-spanning-tree (MST)

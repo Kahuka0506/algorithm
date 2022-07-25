@@ -7,7 +7,7 @@ Competitive Programming Library
 ![Lines of code](https://img.shields.io/tokei/lines/github/Kahuka0506/algorithm)       
 
 
-## [Graph](./graph/README.md)
+## [Graph](./graph/)
 - ベルマンフォード   `bellman_ford.cpp`  Shortest-Path
 - ダイクストラ   `dijkstra.cpp`  Shortest-Path
 - ワーシャルフロイド  `warshall_floyd.cpp`  Shortest-Path
@@ -23,7 +23,7 @@ Competitive Programming Library
 - 二部マッチング
 
 
-## [Tree](./tree/README.md)
+## [Tree](./tree/)
 - トポロジカルソート `topological_sort.cpp` Topological Sort
 - 木の直径 `diameter_of_tree.cpp`
 - 木の高さ
@@ -33,7 +33,7 @@ Competitive Programming Library
 
 
 
-## [Data Structure](./data_structure/README.md)
+## [Data Structure](./data_structure/)
 - Union Find  `union_find.cpp`
 - 重みつきUnion Find `union_find.cpp`
 - 座標圧縮 `compress.cpp`
@@ -46,7 +46,7 @@ Competitive Programming Library
 - トライ木 `trie.cpp`
 
 
-## [Number](./number/README.md)
+## [Number](./number/)
 - 桁和 `digit_sum.cpp`  
 - 約数列挙  `enum_divisors.cpp`  
 - 最小共約数・最大公倍数  `gcd_lcm.cpp`  
@@ -61,7 +61,7 @@ Competitive Programming Library
 
 
 
-## [Math](./math/README.md)
+## [Math](./math/)
 - ラグランジュ補完 `lagrange_interpolation.cpp` mod書き換え
 - 行列冪乗
 - Kitamasa法 `kitamasa_method.cpp`
@@ -75,14 +75,14 @@ Competitive Programming Library
 
 
 
-## [String](./string/README.md)
-- [Rolling-Hash](./string/rolling_hash.cpp) `rolling_hash.cpp`
-- [Z-algorithm](./string/z_algorithm.cpp) `z_algorithm.cpp`
+## [String](./string/)
+- Rolling-Hash `rolling_hash.cpp`
+- Z-algorithm `z_algorithm.cpp`
 - KMP
 - Manacher
 
 
-## [Other](./other/README.md)
+## [Other](./other/)
 - Xor-Shirft `xorshift.cpp`
 - 再帰下降構文解析 EBNF(Extended Backus–Naur Form) `EBNF.cpp`
 - 二分探索木 Binary Search Tree `binary_search_tree.cpp`
