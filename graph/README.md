@@ -1,14 +1,14 @@
 # Graph
 
 ## Shortest Path
-- [Dijkstra](./dijkstra.cpp)  `dijkstra.cpp`, $O(E\text{log}(V))$
-- [Bellman-Ford](./bellman_ford.cpp) `bellman_ford.cpp`, $O(EV)$
-- [Warshall-Floyd](./warshall_floyd.cpp)  `warshall_floyd.cpp`, $O(V^3)$
+- [Dijkstra](./dijkstra.cpp)  `dijkstra.cpp`, $O(E\text{log}(V))$ 
+- [Bellman-Ford](./bellman_ford.cpp) `bellman_ford.cpp`, $O(EV)$ 
+- [Warshall-Floyd](./warshall_floyd.cpp)  `warshall_floyd.cpp`, $O(V^3)$ 
 
 
 ## minimam-spanning-tree (MST)
-- プリム法   `prim_method.cpp`  
-- クラスカル法    
+- [プリム法](./mst_prim.cpp) `mst_prim.cpp`, $E\text{log}(v)$ 
+- [クラスカル法](./mst_kruskal.cpp) `mst_kruskal.cpp`, $E\text{log}(v)$     
 
 
 ## Strongly Connected Component (SCC)

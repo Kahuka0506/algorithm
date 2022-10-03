@@ -8,8 +8,8 @@
 - ベルマンフォード   `bellman_ford.cpp`  Shortest-Path
 - ダイクストラ   `dijkstra.cpp`  Shortest-Path
 - ワーシャルフロイド  `warshall_floyd.cpp`  Shortest-Path
-- プリム法   `prim_method.cpp` minimam-spanning-tree (MST)
-- クラスカル法   minimam-spanning-tree (MST)
+- プリム法   `mst_prim.cpp` minimam-spanning-tree (MST)
+- クラスカル法  `mst_kruskal.cpp` minimam-spanning-tree (MST)
 - 強連結成分分解 `scc.cpp` Strongly Connected Component (SCC) 
 - フォードファルカーソン `ford_fulkerson.cpp` Maximum Flow 
 - ディニツ `dinic.cpp` Maximum Flow 
