@@ -7,8 +7,8 @@
 
 
 ## minimam-spanning-tree (MST)
-- [プリム法](./mst_prim.cpp) `mst_prim.cpp`, $E\text{log}(v)$ 
-- [クラスカル法](./mst_kruskal.cpp) `mst_kruskal.cpp`, $E\text{log}(v)$     
+- [プリム法](./mst_prim.cpp) `mst_prim.cpp`, $O(E\text{log}(V))$ 
+- [クラスカル法](./mst_kruskal.cpp) `mst_kruskal.cpp`, $0(E\text{log}(V))$     
 
 
 ## Strongly Connected Component (SCC)
