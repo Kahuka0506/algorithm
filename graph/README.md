@@ -11,10 +11,6 @@
 - [クラスカル法](./mst_kruskal.cpp) `mst_kruskal.cpp`, $O(E\text{log}(V))$     
 
 
-## Strongly Connected Component (SCC)
-- 強連結成分分解 `scc.cpp`
-
-
 ## Flow
 - フォードファルカーソン `ford_fulkerson.cpp` Maximum Flow 
 - ディニツ `dinic.cpp` Maximum Flow 
@@ -26,3 +22,8 @@
 ## Matching
 - 二部グラフ
 - 二部マッチング
+
+
+## other
+- 閉路検出 `cycle_detection.cpp`
+- 強連結成分分解 `scc.cpp`

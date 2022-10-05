@@ -10,6 +10,7 @@
 - ワーシャルフロイド  `warshall_floyd.cpp`  Shortest-Path
 - プリム法   `mst_prim.cpp` minimam-spanning-tree (MST)
 - クラスカル法  `mst_kruskal.cpp` minimam-spanning-tree (MST)
+- 閉路検出 `cycle_detection.cpp`
 - 強連結成分分解 `scc.cpp` Strongly Connected Component (SCC) 
 - フォードファルカーソン `ford_fulkerson.cpp` Maximum Flow 
 - ディニツ `dinic.cpp` Maximum Flow 
