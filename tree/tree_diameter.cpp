@@ -1,4 +1,45 @@
 
+template <typename T>
+class TreeDiameter {
+    int N;
+    ve<ve<pair<int,T>>> G;
+    ve<T> d;
+    vi pa;
+    int get_farhtest(int s){
+        d.assign(N,-1);
+        pa.assign(N,-1);
+        d[s] = 0;
+        queue<int> que;
+        que.push(s);
+        while (!que.empty()) {
+            int u = que.front();
+            que.pop();
+            for (auto [v,w] : G[u]) {
+                if(d[v] != -1) continue;
+                d[v] = d[u] + w;
+                que.push(v);
+                pa[v] = u;
+            }
+        }
+        return int(max_element(all(d))-d.begin());
+    }
+public:
+    TreeDiameter(int n):N(n){G.resize(N);}
+    void add_edge(int a, int b, T c){G[a].pb({b,c});}
+    int L=-1,R=-1;
+    vi path;
+    T solve(){
+        L = get_farhtest(0);
+        R = get_farhtest(L);
+        int s = R;
+        while (s != -1) {
+            path.pb(s);
+            s = pa[s];
+        }
+        return d[R];
+    }
+};
+
 
 
 
