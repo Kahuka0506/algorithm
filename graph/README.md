@@ -6,10 +6,14 @@
 - [Warshall-Floyd](./warshall_floyd.cpp)  `warshall_floyd.cpp`, $O(V^3)$ 
 
 
-## minimam-spanning-tree (MST)
+## Minimam Spanning Tree (MST)
 - [プリム法](./mst_prim.cpp) `mst_prim.cpp`, $O(E\text{log}(V))$ 
 - [クラスカル法](./mst_kruskal.cpp) `mst_kruskal.cpp`, $O(E\text{log}(V))$     
 
+## Cycle
+- 閉路検出 `cycle_detection.cpp`
+- 強連結成分分解 `scc.cpp`
+- トポロジカルソート `topological_sort.cpp` Topological Sort
 
 ## Flow
 - フォードファルカーソン `ford_fulkerson.cpp` Maximum Flow 
@@ -24,6 +28,3 @@
 - 二部マッチング
 
 
-## other
-- 閉路検出 `cycle_detection.cpp`
-- 強連結成分分解 `scc.cpp`

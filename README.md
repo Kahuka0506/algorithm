@@ -1,4 +1,5 @@
-# Algorithm Library
+<h2 align="center">Algorithm Library</h2>
+<p align="center"> </p>
 
 [![Kahuka](https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2FKahuka)](https://atcoder.jp/users/Kahuka)
 [![Kahuka](https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fcodeforces%2Fjson%2FKahuka)](https://codeforces.com/profile/Kahuka) 
@@ -12,6 +13,7 @@
 - クラスカル法  `mst_kruskal.cpp` minimam-spanning-tree (MST)
 - 閉路検出 `cycle_detection.cpp`
 - 強連結成分分解 `scc.cpp` Strongly Connected Component (SCC) 
+- トポロジカルソート `topological_sort.cpp` Topological Sort
 - フォードファルカーソン `ford_fulkerson.cpp` Maximum Flow 
 - ディニツ `dinic.cpp` Maximum Flow 
 - プリプロープッシュ法
@@ -22,7 +24,6 @@
 
 
 ## [Tree](./tree/)
-- トポロジカルソート `topological_sort.cpp` Topological Sort
 - 木の直径 `tree_diameter.cpp`
 - 木の高さ
 - 最小共通祖先   `lca.cpp`,`lca_RMQ.cpp` Lowest-Common-Ancestor (LCA) 
