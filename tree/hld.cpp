@@ -1,4 +1,65 @@
 
+class HLD{
+private:
+    int N;
+public:
+    vvi G;
+    HLD(int n):N(n){G.resize(N);};
+    void add_edge(int a, int b){G[a].pb(b);}
+
+    vi par, d, heavy, head, pos;
+    int cur_pos;
+
+    int dfs(int u){
+        int res = 1;
+        int max_sz = 0;
+        for(int v : G[u]){
+            if(par[u] == v) continue;
+            par[v] = u, d[v] = d[u] + 1;
+            int v_sz = dfs(v);
+            res += v_sz;
+            if(chmax(max_sz,v_sz)) heavy[u] = v;
+        }
+        return res;
+    }
+
+    void construct_hld(int u, int h){
+        head[u] = h, pos[u] = cur_pos++;
+        if(heavy[u] != -1) construct_hld(heavy[u], h);
+        for(int v : G[u]){
+            if(par[u] == v || v == heavy[u]) continue;
+            construct_hld(v,v);
+        }
+    }
+
+    void solve(){
+        par.assign(N,-1);
+        d.assign(N,-1);
+        heavy.assign(N,-1);
+        head.resize(N);
+        pos.resize(N);
+        cur_pos = 0;
+        d[0] = 0;
+        dfs(0);
+        construct_hld(0,0);
+
+    }
+    
+    int lca_query(int u, int v){
+        int res = 0;
+        while(head[u] != head[v]){
+            if(d[head[u]] > d[head[v]]) swap(u,v);
+            v = par[head[v]];
+        }
+        if(d[u] > d[v]) swap(u,v);
+        return u;
+    }
+};
+
+ 
+
+
+
 
 class HLD {
     int N;

@@ -12,8 +12,12 @@
 
 ## Cycle
 - 閉路検出 `cycle_detection.cpp`
-- 強連結成分分解 `scc.cpp`
 - トポロジカルソート `topological_sort.cpp` Topological Sort
+
+## Connected Components
+- 強連結成分分解 `scc.cpp`
+- 橋 `bridge.cpp`
+- 関節点 `articulation_point.cpp`
 
 ## Flow
 - フォードファルカーソン `ford_fulkerson.cpp` Maximum Flow 
