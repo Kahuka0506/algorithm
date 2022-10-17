@@ -28,9 +28,7 @@ public:
     vi solve(){
         ord.assign(N,-1);
         lowlink.assign(N,N+3);
-        dfs(0);
-        outve(ord);
-        outve(lowlink);
+        rep(i,N) if(ord[i] == -1) dfs(i);
         return articulation_point;
     }
 

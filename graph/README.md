@@ -18,6 +18,7 @@
 - 強連結成分分解 `scc.cpp`
 - 橋 `bridge.cpp`
 - 関節点 `articulation_point.cpp`
+- 二辺連結成分分解 `two_edge_connected_components.cpp`
 
 ### Flow
 - フォードファルカーソン `ford_fulkerson.cpp` Maximum Flow 
