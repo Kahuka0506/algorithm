@@ -1,4 +1,4 @@
-# Tree
+## Tree
  
 - 木の直径 `tree_diameter.cpp`
 - 木の高さ `tree_height.cpp`

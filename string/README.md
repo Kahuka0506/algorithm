@@ -1,4 +1,4 @@
-# String
+## String
 
 ### Z-Algorithm
 `z_algorithm.cpp`     

@@ -1,4 +1,4 @@
-# Data Structure
+## Data Structure
 
 - Union Find  `union_find.cpp`
 - 重みつきUnion Find `union_find.cpp`

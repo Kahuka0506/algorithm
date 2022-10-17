@@ -1,4 +1,4 @@
-# Number
+## Number
   
 - 桁和 `digit_sum.cpp`  
 - 約数列挙  `enum_divisors.cpp`  

@@ -1,4 +1,4 @@
-# Other
+## Other
   
 - [Xor-Shirft](./xorshift.cpp) `xorshift.cpp`
 - [再帰下降構文解析](./EBNF.cpp) `EBNF.cpp` EBNF(Extended Backus–Naur Form)
