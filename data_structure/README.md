@@ -16,7 +16,7 @@
     - Range Minimum Query  `segment_tree_RMQ.cpp`
     - Range Add Query  `segment_tree_RAQ.cpp`
     
-- Lazy Swgmet Tree 
+- Lazy Swgmet Tree `lazy_segment_tree.cpp`
     - Range Updata Query  `lazy_segment_tree_RUQ.cpp`
     - Range Add Query  `lazy_segment_tree_RAQ.cpp`
 
