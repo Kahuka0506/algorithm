@@ -12,14 +12,6 @@ class LazySegmentTree {
     
 public:
     ve<T> node;
-    LazySegmentTree(int n, T _e=T(), F _el=F(),
-                    OP _op=OP(), OP_NL _op_nl=OP_NL(), OP_LL _op_ll=OP_LL())
-                    : e(_e), op(_op), el(_el), op_nl(_op_nl), op_ll(_op_ll){
-        N = int(1<<(bsr(n)+1));
-        node.resize(2*N-1,e);
-        lazy.resize(2*N-1,el);
-        lazy_f.assign(2*N-1,false);
-    }
     LazySegmentTree(ve<T> v, T _e=T(), F _el=F(),
                     OP _op=OP(), OP_NL _op_nl=OP_NL(), OP_LL _op_ll=OP_LL())
                     : e(_e), op(_op), el(_el), op_nl(_op_nl), op_ll(_op_ll){
@@ -30,14 +22,6 @@ public:
         lazy_f.assign(2*N-1,false);
         rep(i,N) node[i+N-1] = v[i];
         per(i,N-1) node[i] = op(node[i*2+1],node[i*2+2]);
-    }
-    void set(int x, T p){
-        x += N-1;
-        node[x] = p;
-        while (x > 0) {
-            x = (x-1)/2;
-            node[x] = op(node[x*2+1],node[x*2+2]);
-        }
     }
     T get(int x){return prod(x,x+1);}
     void eval(int k, int l, int r){
