@@ -7,36 +7,22 @@
  
 
 ## [Graph](./graph/)
-
-### Shortest Path
 - Dijkstra  `dijkstra.cpp`, $O(E\text{log}(V))$ 
 - Bellman-Ford `bellman_ford.cpp`, $O(EV)$ 
 - Warshall-Floyd  `warshall_floyd.cpp`, $O(V^3)$ 
-
-
-### Minimam Spanning Tree (MST)
 - プリム法 `mst_prim.cpp`, $O(E\text{log}(V))$ 
 - クラスカル法 `mst_kruskal.cpp`, $O(E\text{log}(V))$     
-
-### Cycle
 - 閉路検出 `cycle_detection.cpp`
 - トポロジカルソート `topological_sort.cpp` Topological Sort
-
-### Connected Components
 - 強連結成分分解 `scc.cpp`
 - 橋 `bridge.cpp`
 - 関節点 `articulation_point.cpp`
 - 二辺連結成分分解 `two_edge_connected_components.cpp`
-
-### Flow
 - フォードファルカーソン `ford_fulkerson.cpp` Maximum Flow 
 - ディニツ `dinic.cpp` Maximum Flow 
 - プリプロープッシュ法
 - 最小費用流(負閉路除去) `min_cost_flow_negative_cycle.cpp.cpp` Minimax Fost Flow
 - 最小費用流(主双対法) `min_cost_flow_primal_dual.cpp.cpp` Minimax Fost Flow
-
-
-### Matching
 - 二部グラフ
 - 二部マッチング
 
@@ -102,20 +88,11 @@
  
  
 ## [String](./string/)
-### Z-Algorithm
-`z_algorithm.cpp`     
-文字列$S$，$S$と$S[i:|S|]$の最長共通接頭辞(LCP,Longest common prefix)の長さを記録した配列を$O(|S|)$で構築．
-
-
-### KMP
-
-### Manacher
-
-### Rolling-Hash
-`rolling_hash.cpp`  
-
-### Suffix Array
-`suffix_array.cpp`
+- Z-Algorithm `z_algorithm.cpp`     
+- KMP
+- Manacher
+- Rolling-Hash `rolling_hash.cpp`  
+- Suffix Array `suffix_array.cpp`
 
 
  
