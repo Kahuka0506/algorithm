@@ -23,4 +23,4 @@
 
 - トライ木 `trie.cpp`
 
-
+- 二分探索木 `binary_search_tree.cpp`
