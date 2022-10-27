@@ -1,17 +1,14 @@
 
-class HLD {
+class HLDExec {
     int N;
     vvi G;
-    int root;
-    
 public:
-    HLD(int _N):N(_N){}
-    HLD(const vvi& _G, int _root = 0){
+    int root;
+    HLDExec(const vvi& _G, int _root = 0){
         G = _G, N = si(G);
         root = _root;
         construct(root);
     }
-    void add_edge(int a,int b){G[a].pb(b);}
     vi heavy,par,d;
     vi head,pos;
     int dfs(int u){
@@ -53,5 +50,16 @@ public:
         }
         if(d[u] > d[v]) swap(u,v);
         return u;
+    }
+    
+    template<class OP>
+    void prod(int u, int v, OP op){
+        while (head[u] != head[v]) {
+            if(d[head[u]] > d[head[v]]) swap(u,v);
+            op(pos[head[v]], pos[v]+1);
+            v = par[head[v]];
+        }
+        if(d[u] > d[v]) swap(u,v);
+        op(pos[u]+1,pos[v]+1);
     }
 };
