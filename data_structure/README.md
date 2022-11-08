@@ -29,3 +29,6 @@
 - Persistent Stack `persistent_stack.cpp`
 - Queue `queue.cpp`
 - Persistent Queue `persistent_queue.cpp`
+
+- Sliding Window Aggregation `sliding_window_aggregation.cpp`
+- Deque Aggregation `deque_aggregation.cpp`
