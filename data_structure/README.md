@@ -10,7 +10,7 @@
 - Sparse Table `sparse_table.cpp`
 
 
-- Binary index tree `binary_index_tree.cpp`   
+- Fenwic Tree `fenwic_tree.cpp`   
 
 - Segment Tree  `segment_tree.cpp`
     - Range Minimum Query  `segment_tree_RMQ.cpp`
@@ -32,3 +32,5 @@
 
 - Sliding Window Aggregation `sliding_window_aggregation.cpp`
 - Deque Aggregation `deque_aggregation.cpp`
+
+- Mo Algorithm `mo_algorithm.cpp`
