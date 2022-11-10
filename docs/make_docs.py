@@ -29,7 +29,7 @@ output_file.write("""
 
     
         
-[List](./doc/index.md)
+[List](./docs/index.md)
 
 """)
 
