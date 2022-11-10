@@ -36,7 +36,10 @@ output_file.write("""
 files = os.listdir("../")
 for f in files:
     path = os.path.join("../", f)
+    if(f == '.git' or f == 'docs'):
+        continue;
     if os.path.isdir(path):
+        
         #output_file.write('### [' + os.path.splitext(f)[0] + '](./' + path + ')\n')
                 
         files_d = os.listdir(path)
@@ -68,6 +71,8 @@ output_file = open('index.md','w')
 output_file.write("# Algorithm\n")
 for f in files:
     path = os.path.join("../", f)
+    if(f == '.git' or f == 'docs'):
+        continue;
     if os.path.isdir(path):
         output_file.write('### [' + os.path.splitext(f)[0] + '](./' + path + ')\n')
                 
