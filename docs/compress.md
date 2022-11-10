@@ -1,0 +1,46 @@
+# compress
+リンク : [../data_structure/compress.cpp](../data_structure/compress.cpp)    
+最終更新 : 2021-10-26 13:35:29.464489
+
+```cpp
+
+
+vi compress1(vi &A){
+    int n = si(A);
+    vi val = A;
+    sort(all(val));
+    val.erase(unique(all(val)),val.end());
+    vi x(n);
+    rep(i,n){
+        A[i] = lbi(val,A[i]);
+    }
+    
+    outve(A);
+    outve(val);
+    
+    return val;
+}
+
+
+vi compress2(vi& x1, vi& x2){
+    
+    int n = si(x1);
+    vi a;
+    rep(i,n){
+        a.pb(x1[i]);
+        a.pb(x2[i]);
+        a.pb(x1[i]+1);
+        a.pb(x2[i]+1);
+    }
+    sort(all(a));
+    a.erase(unique(all(a)),a.end());
+    
+    rep(i,n){
+        x1[i] = lbi(a,x1[i]);
+        x2[i] = lbi(a,x2[i]);
+    }
+    
+    return a;
+}
+
+```

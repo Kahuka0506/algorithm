@@ -1,0 +1,42 @@
+# bridge
+リンク : [../graph/bridge.cpp](../graph/bridge.cpp)    
+最終更新 : 2022-10-18 00:46:38.269529
+
+```cpp
+
+class Bridge{
+private:
+    int N;
+public:
+    vvi G;
+    Bridge(int n):N(n){G.resize(N);}
+    Bridge(int n, const vvi &g):N(n){G = g;}
+    void add_edge(int a, int b){G[a].pb(b);}
+
+    vi ord, lowlink;
+    ve<pii> bridge;
+    int cn = 0;
+    void dfs(int u, int u0 = -1){
+        ord[u] = lowlink[u] = cn++;
+        for(int v: G[u]){
+            if(v == u0) continue;
+            if(ord[v] != -1) {
+                chmin(lowlink[u], ord[v]);
+                continue;
+            }
+            dfs(v,u);
+            chmin(lowlink[u],lowlink[v]);
+            if(ord[u] < lowlink[v]) bridge.pb({u,v});
+        }
+    }
+    ve<pii> solve(){
+        ord.assign(N,-1);
+        lowlink.assign(N,N+3);
+        rep(i,N) if(ord[i] == -1) dfs(i);
+        return bridge;
+    }
+
+};
+
+
+```
