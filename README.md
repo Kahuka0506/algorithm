@@ -50,7 +50,7 @@
     - `lazy_segment_tree_RMQ_RUQ.cpp`
     - `lazy_segment_tree_RMQ_RAQ.cpp`
 
-
+- kD-tree `kD_tree.cpp`
 - トライ木 `trie.cpp`
 
 - 二分探索木 `binary_search_tree.cpp`

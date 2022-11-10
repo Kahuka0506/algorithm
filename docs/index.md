@@ -32,6 +32,7 @@
 - [deque_aggregation](./deque_aggregation.md)
 - [treap](./treap.md)
 - [union_find](./union_find.md)
+- [kD_tree](./kD_tree.md)
 - [lazy_segment_tree](./lazy_segment_tree.md)
 - [treap_map](./treap_map.md)
 - [mo_algorithm](./mo_algorithm.md)
