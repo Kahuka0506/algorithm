@@ -17,8 +17,10 @@
     - Range Add Query  `segment_tree_RAQ.cpp`
     
 - Lazy Swgmet Tree `lazy_segment_tree.cpp`
-    - Range Updata Query  `lazy_segment_tree_RUQ.cpp`
-    - Range Add Query  `lazy_segment_tree_RAQ.cpp`
+    - `lazy_segment_tree_RSQ_RUQ.cpp`
+    - `lazy_segment_tree_RSQ_RAQ.cpp`
+    - `lazy_segment_tree_RMQ_RUQ.cpp`
+    - `lazy_segment_tree_RMQ_RAQ.cpp`
 
 
 - トライ木 `trie.cpp`
