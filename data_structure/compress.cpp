@@ -5,14 +5,9 @@ vi compress1(vi &A){
     vi val = A;
     sort(all(val));
     val.erase(unique(all(val)),val.end());
-    vi x(n);
-    rep(i,n){
-        A[i] = lbi(val,A[i]);
-    }
-    
-    outve(A);
-    outve(val);
-    
+    rep(i,n) A[i] = lbi(val,A[i]);
+    //outve(A);
+    //outve(val);
     return val;
 }
 
