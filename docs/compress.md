@@ -1,6 +1,6 @@
 # compress
 リンク : [../data_structure/compress.cpp](../data_structure/compress.cpp)    
-最終更新 : 2021-10-26 13:35:29.464489
+最終更新 : 2022-11-12 15:41:20.907705
 
 ```cpp
 
@@ -10,14 +10,9 @@ vi compress1(vi &A){
     vi val = A;
     sort(all(val));
     val.erase(unique(all(val)),val.end());
-    vi x(n);
-    rep(i,n){
-        A[i] = lbi(val,A[i]);
-    }
-    
-    outve(A);
-    outve(val);
-    
+    rep(i,n) A[i] = lbi(val,A[i]);
+    //outve(A);
+    //outve(val);
     return val;
 }
 
