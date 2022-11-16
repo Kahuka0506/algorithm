@@ -30,7 +30,10 @@
 
 #### Matching
 - 二部グラフ
-- 二部マッチング
+- 二部グラフのマッチング 
+    - 最大流(Dinic) `biparate_matching_dinic.cpp` 
+    - 増加道アルゴリズム `biparate_matching.cpp` $ O(EV) $
+    - Hopcroft-Karp `biparate_matching_HopcroftKarp.cpp` $ O(E\sqrt(V)) $
 
 #### other
 - 最大クリーク数，最大独立点集合 `maximum_indepenedent_set.cpp`
