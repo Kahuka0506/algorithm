@@ -37,7 +37,7 @@ files = os.listdir("../")
 files = sorted(files)
 for f in files:
     path = os.path.join("../", f)
-    if(f == '.git' or f == 'docs'):
+    if(f == '.git' or f == 'docs' or f == 'other'):
         continue;
     if os.path.isdir(path):
         
@@ -78,6 +78,7 @@ for f in files:
         output_file.write('### [' + os.path.splitext(f)[0] + '](./' + path + ')\n')
                 
         files_d = os.listdir(path)
+        files_d = sorted(files_d)
         for f_d in files_d:
             path_d = os.path.join(path, f_d)
             if os.path.isfile(path_d):
