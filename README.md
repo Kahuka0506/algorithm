@@ -9,29 +9,15 @@
         
 [List](./docs/index.md)
 
-## Tree
-[tree/README.md](./tree/README.md)
- 
-- 木の直径 `tree_diameter.cpp`
-- 木の高さ `tree_height.cpp`
-- 最小共通祖先，Lowest-Common-Ancestor (LCA) 
-    - `lca.cpp`
-    - `lca_RMQ.cpp`
-    - `lca_HLD.cpp`
-- オイラーツアー `euler_tour.cpp`
-- HL分解，Heavy-Light Decomposition (HLD)   
-    - `hld.cpp` 
-    - `hld_exec.cpp` 
-- Cartesian Tree `cartesian_tree.cpp`
-
-
 ## Data Structure
 [data_structure/README.md](./data_structure/README.md)
 
 - Union-Find  `union_find.cpp`
 - Wehited Unionf-Find `union_find_weighted.cpp`
 - 座標圧縮 `compress.cpp`
-- 累積和 `range_sum_dim1.cpp`,`range_sum_dim2.cpp`
+- 累積和 
+    - 1次元 `range_sum_dim1.cpp`
+    - 2次元 `range_sum_dim2.cpp`
 - Range Min/Max `range_min.cpp`
 - Sparse Table `sparse_table.cpp`
 - Fenwic Tree `fenwic_tree.cpp`   
@@ -45,14 +31,20 @@
     - `lazy_segment_tree_RMQ_RAQ.cpp`
 - kD-tree `kD_tree.cpp`
 - トライ木 `trie.cpp`
-- 二分探索木 `binary_search_tree.cpp`
-- Treap `treap.cpp`，`treap_map.cpp`
-- Stack `stack.cpp`
-- Persistent Stack `persistent_stack.cpp`
-- Queue `queue.cpp`
-- Persistent Queue `persistent_queue.cpp`
-- Sliding Window Aggregation `sliding_window_aggregation.cpp`
-- Deque Aggregation `deque_aggregation.cpp`
+- Heap
+    - Heap `heap.cpp`
+    - Interval-Heap `interval_heap.cpp`
+    - Leftist-Heap `leftist_heap.cpp`
+- Binary Search Tree
+    - 二分探索木 `binary_search_tree.cpp`
+    - Treap `treap.cpp`，`treap_map.cpp`
+- Stack,Queue
+    - Stack `stack.cpp`
+    - Persistent Stack `persistent_stack.cpp`
+    - Queue `queue.cpp`
+    - Persistent Queue `persistent_queue.cpp`
+    - Sliding Window Aggregation `sliding_window_aggregation.cpp`
+    - Deque Aggregation `deque_aggregation.cpp`
 - Mo Algorithm `mo_algorithm.cpp`
 
 
@@ -99,16 +91,6 @@
 - 彩色数
 
 
-## Other
-[other/README.md](./other/README.md)
-  
-- [Xor-Shirft](./xorshift.cpp) `xorshift.cpp`
-- [再帰下降構文解析](./EBNF.cpp) `EBNF.cpp` EBNF(Extended Backus–Naur Form)
-- [二分探索木](./binary_search_tree.cpp) `binary_search_tree.cpp` Binary Search Tree 
-- [Heap](./heap.cpp) `heap.cpp`
-- 赤黒木
-
-
 ## Math
 [math/README.md](./math/README.md)
   
@@ -140,6 +122,16 @@
  
 
 
+## Other
+[other/README.md](./other/README.md)
+  
+- [Xor-Shirft](./xorshift.cpp) `xorshift.cpp`
+- [再帰下降構文解析](./EBNF.cpp) `EBNF.cpp` EBNF(Extended Backus–Naur Form)
+- [二分探索木](./binary_search_tree.cpp) `binary_search_tree.cpp` Binary Search Tree 
+- [Heap](./heap.cpp) `heap.cpp`
+- 赤黒木
+
+
 ## String
 [string/README.md](./string/README.md)
 
@@ -152,5 +144,21 @@
 
 
 
+
+
+## Tree
+[tree/README.md](./tree/README.md)
+ 
+- 木の直径 `tree_diameter.cpp`
+- 木の高さ `tree_height.cpp`
+- 最小共通祖先，Lowest-Common-Ancestor (LCA) 
+    - `lca.cpp`
+    - `lca_RMQ.cpp`
+    - `lca_HLD.cpp`
+- オイラーツアー `euler_tour.cpp`
+- HL分解，Heavy-Light Decomposition (HLD)   
+    - `hld.cpp` 
+    - `hld_exec.cpp` 
+- Cartesian Tree `cartesian_tree.cpp`
 
 

@@ -2,7 +2,7 @@ import os
 import datetime
 
 files = os.listdir("./")
-
+files = sorted(files)
 for f in files:
     path = os.path.join("./", f)
     if os.path.isfile(path):
@@ -34,6 +34,7 @@ output_file.write("""
 """)
 
 files = os.listdir("../")
+files = sorted(files)
 for f in files:
     path = os.path.join("../", f)
     if(f == '.git' or f == 'docs'):
@@ -66,7 +67,7 @@ output_file.close()
 
 
 files = os.listdir("../")
-
+files = sorted(files)
 output_file = open('index.md','w')
 output_file.write("# Algorithm\n")
 for f in files:
