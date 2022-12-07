@@ -17,10 +17,10 @@ public:
     : e(_e), op(_op), el(_el), op_nl(_op_nl), op_ll(_op_ll){
         int n = si(v);
         N = int(1<<(bsr(n)+1));
-        node.resize(2*N-1,e);
-        lazy.resize(2*N-1,el);
+        node.assign(2*N-1,e);
+        lazy.assign(2*N-1,el);
         lazy_f.assign(2*N-1,false);
-        rep(i,N) node[i+N-1] = v[i];
+        rep(i,n) node[i+N-1] = v[i];
         per(i,N-1) node[i] = op(node[i*2+1],node[i*2+2]);
     }
     T get(int x){return prod(x,x+1);}
@@ -61,6 +61,8 @@ public:
         return op(vl,vr);
     }
 };
+
+
 ll e = ll(1LL<<31)-1LL, el = 0LL;
 auto op = [](ll a, ll b){return min(a,b);};
 auto op_ll = [](ll a, ll b){return b;};
